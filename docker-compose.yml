@@ -1,0 +1,26 @@
+version: '2'
+services:
+  rhd_blinkr_testing:
+    build: .
+    volumes:
+    - .:/home/broken-link-checks
+    working_dir: /home/broken-link-checks
+    environment:
+    - CONFIG
+    - GRID_HOST=blinkr_chrome
+    - GRID_PORT=4444
+
+  rhd_dcp_testing:
+    build: .
+    volumes:
+    - .:/home/broken-link-checks
+    working_dir: /home/broken-link-checks
+
+  blinkr_chrome:
+    image: selenium/standalone-chrome:3.141.59-krypton
+    volumes:
+    - /dev/shm:/dev/shm
+    ports:
+    - "5900"
+    links:
+    - rhd_blinkr_testing
