@@ -4,7 +4,7 @@ services:
     build: ../
     volumes:
     - ..:/home/blc
-    working_dir: /home/broken-link-checks
+    working_dir: /home/blc
     environment:
     - CONFIG
     - GRID_HOST=blinkr_chrome
