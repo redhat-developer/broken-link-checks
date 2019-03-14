@@ -20,13 +20,13 @@ RUN wget http://rubygems.org/rubygems/rubygems-2.6.13.tgz \
     && rm -rf /tmp/* \
     && echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
-RUN gem install bundler --version 1.15.4 --no-rdoc --no-ri
-
 COPY Gemfile Gemfile.lock ./
-RUN bundle install -j 10
+RUN gem install bundler --no-rdoc --no-ri
+RUN bundle install
 
-RUN groupadd -g 1000 broken-link-checks
-RUN useradd -g broken-link-checks -m -s /bin/bash -u 1000 broken-link-checks
-USER broken-link-checks
-WORKDIR /home/broken-link-checks
+
+RUN groupadd -g 1000 blc
+RUN useradd -g blc -m -s /bin/bash -u 1000 blc
+USER blc
+WORKDIR /home/blc
 
