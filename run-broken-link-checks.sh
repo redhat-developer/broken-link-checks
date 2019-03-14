@@ -2,7 +2,7 @@
 
 function run_blinkr_checks {
   printf "\n Launching blinkr broken-link-checking environment... \n"
-  cd blinkr && docker-compose -p rhd_blinkr_testing build
+  cd website && docker-compose -p rhd_blinkr_testing build
   docker-compose -p rhd_blinkr_testing up -d blinkr_chrome
   printf "\n Broken-link-checking environment up and running. Running blinkr checks...\n"
   docker-compose -p rhd_blinkr_testing run --rm --no-deps rhd_blinkr_testing bundle exec blinkr -c $CONFIG -u $RHD_BASE_URL
