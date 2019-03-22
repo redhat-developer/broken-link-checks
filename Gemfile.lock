@@ -16,11 +16,11 @@ GIT
 
 GIT
   remote: http://github.com/redhat-developer/dcp-checker
-  revision: b120abf148b821e7664d9d350e87c9b6cd72a6da
+  revision: 7aceeecc4b5f297bdb03c6c6b8c6226223e817f6
   specs:
     dcp-checker (0.1.0)
       colorize
-      ffi (~> 1.10)
+      ffi (= 1.10)
       nokogiri (~> 1.10)
       parallel (~> 1.12, >= 1.12.1)
       rest-client (~> 2.0)
