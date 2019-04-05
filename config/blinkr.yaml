@@ -29,6 +29,7 @@ skips:
 - !ruby/regexp /^https:\/\/developer\.jboss\.org\/people\/Darrin\/.*/
 - !ruby/regexp /^https:\/\/github\.com\/.*/
 - !ruby/regexp /^https:\/\/twitter.com\/.*/
+- !ruby/regexp /^^https:\/\/community.oracle\.com\/.*/
 - !ruby/regexp /^http:\/\/www\.\jboss\.org\/jdf\/qcleuickstarts\/jboss\-as\-\quickstart\/guide\/.*/
 - !ruby/regexp /^..\/camel\-.*/
 - !ruby/regexp /^https:\/\/access\.redhat\.com\/site\/documentation\/JBoss_Fuse$/
