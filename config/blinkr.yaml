@@ -24,6 +24,8 @@ skips:
 - !ruby/regexp /^https:\/\/docs.jboss.org\/author\/display\/PLINK\/SAML\+Authenticators\+\%28Tomcat\%2CJBossAS\%29+/
 - !ruby/regexp /^https:\/\/developers\.redhat\.com\/variants\/.*/
 - !ruby/regexp /^https:\/\/developers\.redhat\.com\/auth\/.*/
+- !ruby/regexp /^https:\/\/developers\.redhat\.com\/download-manager\/.*/
+- !ruby/regexp /^http:\/\/www\.michaelyuan\.com\/
 - !ruby/regexp /^https:\/\/developer\.jboss\.org\/people\/Darrin\/.*/
 - !ruby/regexp /^https:\/\/github\.com\/.*/
 - !ruby/regexp /^https:\/\/twitter.com\/.*/
