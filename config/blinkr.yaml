@@ -74,6 +74,7 @@ environments:
 - https://rhdp-drupal.stage.redhat.com
 
 max_page_retys: 6
-max_retrys: 6
+max_retrys: 2
 threads: 10
+js_errors: true
 report: blinkr.html

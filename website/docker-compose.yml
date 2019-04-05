@@ -11,7 +11,7 @@ services:
     - GRID_PORT=4444
 
   blinkr_chrome:
-    image: selenium/standalone-chrome:3.141.59-krypton
+    image: selenium/standalone-chrome:3.141.59-mercury
     volumes:
     - /dev/shm:/dev/shm
     ports:
