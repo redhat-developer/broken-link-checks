@@ -28,5 +28,5 @@ RUN bundle install
 RUN groupadd -g 1000 blc
 RUN useradd -g blc -m -s /bin/bash -u 1000 blc
 USER blc
+ENV PERL_LWP_SSL_VERIFY_HOSTNAME = 0
 WORKDIR /home/blc
-
