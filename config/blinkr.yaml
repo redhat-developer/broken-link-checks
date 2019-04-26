@@ -69,11 +69,7 @@ ignores:
 - url: !ruby/regexp /https?:\/\/(www\.)?linkedin\.com\/.*/
 - url: https://xx.x.x.x:8443
 
-environments:
-- http://rhdp-drupal.stage.redhat.com
-- https://rhdp-drupal.stage.redhat.com
-
-max_page_retys: 6
-max_retrys: 6
+max_page_retys: 3
+max_retrys: 3
 threads: 10
 report: blinkr.html
