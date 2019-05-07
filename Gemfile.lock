@@ -1,6 +1,6 @@
 GIT
   remote: http://github.com/RubyGemTSL/blinkr
-  revision: ac9b9344acc55f72e7575451ee5276548ad08708
+  revision: 78eea9813cabb8355f2ef396625e1b7e87111215
   branch: master
   specs:
     blinkr (1.0.0)
@@ -73,7 +73,7 @@ GEM
     rounding (1.0.1)
     rubyzip (1.2.2)
     safe_yaml (1.0.5)
-    selenium-webdriver (3.142.0)
+    selenium-webdriver (3.142.1)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
     slim (3.0.9)
