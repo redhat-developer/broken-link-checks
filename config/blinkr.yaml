@@ -1,6 +1,8 @@
+#<% sitemap_loc = "#{File.dirname(File.expand_path('.', __FILE__))}/config/local-sitemap.xml" %>
+#custom_sitemap: <%= sitemap_loc %>
 verbose: true
 base_url: https://developers.redhat.com
-remote: true
+remote: false
 skips:
 - !ruby/regexp /^https:\/\/redhat.com\/.*/
 - !ruby/regexp /^http:\/\/registry.access.redhat\.com\/.*/

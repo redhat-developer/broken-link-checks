@@ -1,6 +1,6 @@
 GIT
   remote: http://github.com/RubyGemTSL/blinkr
-  revision: 78eea9813cabb8355f2ef396625e1b7e87111215
+  revision: b3aeaf817795a0f07f7c2f77c438109cc63de9a5
   branch: master
   specs:
     blinkr (1.0.0)
