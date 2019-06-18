@@ -1,6 +1,6 @@
 verbose: true
 base_url: https://developers.redhat.com
-remote: false
+remote: true
 skips:
 - !ruby/regexp /^https:\/\/redhat.com\/.*/
 - !ruby/regexp /^http:\/\/registry.access.redhat\.com\/.*/
@@ -23,9 +23,13 @@ skips:
 - !ruby/regexp /^https:\/\/docs.jboss.org\/author\/display\/PLINK\/Security\+Token\+Server\+%28STS%29+/
 - !ruby/regexp /^https:\/\/docs.jboss.org\/author\/display\/PLINK\/SAML\+Authenticators\+\%28Tomcat\%2CJBossAS\%29+/
 - !ruby/regexp /^https:\/\/developers\.redhat\.com\/variants\/.*/
+- !ruby/regexp /^https:\/\/developers\.redhat\.com\/auth\/.*/
+- !ruby/regexp /^https:\/\/developers\.redhat\.com\/download-manager\/.*/
+- !ruby/regexp /^http:\/\/www\.michaelyuan\.com/
 - !ruby/regexp /^https:\/\/developer\.jboss\.org\/people\/Darrin\/.*/
 - !ruby/regexp /^https:\/\/github\.com\/.*/
 - !ruby/regexp /^https:\/\/twitter.com\/.*/
+- !ruby/regexp /^^https:\/\/community.oracle\.com\/.*/
 - !ruby/regexp /^http:\/\/www\.\jboss\.org\/jdf\/qcleuickstarts\/jboss\-as\-\quickstart\/guide\/.*/
 - !ruby/regexp /^..\/camel\-.*/
 - !ruby/regexp /^https:\/\/access\.redhat\.com\/site\/documentation\/JBoss_Fuse$/
@@ -69,7 +73,15 @@ ignores:
 - url: !ruby/regexp /https?:\/\/(www\.)?linkedin\.com\/.*/
 - url: https://xx.x.x.x:8443
 
+environments:
+- http://rhdp-drupal.stage.redhat.com
+- https://rhdp-drupal.stage.redhat.com
+
 max_page_retys: 3
 max_retrys: 3
 threads: 10
+js_errors: true
+empty_title: true
+empty_href: true
+empty_img_alt: true
 report: blinkr.html

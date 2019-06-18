@@ -22,11 +22,10 @@ RUN wget http://rubygems.org/rubygems/rubygems-2.6.13.tgz \
 
 COPY Gemfile Gemfile.lock ./
 RUN gem install bundler --no-rdoc --no-ri
-RUN bundle install
-
+RUN bundle update && bundle install
 
 RUN groupadd -g 1000 blc
 RUN useradd -g blc -m -s /bin/bash -u 1000 blc
 USER blc
+ENV PERL_LWP_SSL_VERIFY_HOSTNAME = 0
 WORKDIR /home/blc
-
