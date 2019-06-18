@@ -1,7 +1,0 @@
-version: '2'
-services:
-  rhd_dcp_testing:
-    build: ../
-    volumes:
-    - ..:/home/blc
-    working_dir: /home/blc

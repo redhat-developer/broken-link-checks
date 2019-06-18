@@ -1,6 +1,6 @@
 verbose: true
 base_url: https://developers.redhat.com
-remote: true
+remote: false
 skips:
 - !ruby/regexp /^https:\/\/redhat.com\/.*/
 - !ruby/regexp /^http:\/\/registry.access.redhat\.com\/.*/

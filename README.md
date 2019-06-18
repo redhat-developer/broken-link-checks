@@ -2,13 +2,11 @@ RHDP broken-link-checks
 =============================
 
 ## Summary 
-This repository contains the quality checks for the red hat developers [website](https://developers.redhat.com). These checks include, but are not limited to broken link checking using [blinkr](https://github.com/RubyGemTSL/blinkr) for the website and [dcp-checker](https://github.com/redhat-developer/dcp-checker) for search our content provider (dcp).
+This repository contains the quality checks for the red hat developers [website](https://developers.redhat.com). 
 
-## Reports
+These checks include, but are not limited to broken link checking using [blinkr](https://github.com/RubyGemTSL/blinkr) for the developers website.
 
-### Website Broken link checks
-For the latest website broken link report please view it [here](https://redhat-developer.github.io/broken-link-checks/report/blinkr.html).
+## Report
 
-### DCP Broken links
-For the latest DCP broken link report please view it [here](https://redhat-developer.github.io/broken-link-checks/report/dcp-report.html).
+The latest broken link report can be found [here](https://redhat-developer.github.io/broken-link-checks/report/blinkr.html).
 
