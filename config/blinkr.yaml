@@ -81,7 +81,7 @@ max_page_retys: 3
 max_retrys: 3
 threads: 10
 js_errors: true
-empty_title: true
-empty_href: true
-empty_img_alt: true
+empty_title: false
+empty_href: false
+empty_img_alt: false
 report: blinkr.html
